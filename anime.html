@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="anime.css">
+</head>
+<body>
+    <div class="container-fluid g-0">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://wallpapers.com/images/hd/tsubasa-reservoir-chronicle-characters-mym7iv6ii7qajxzv.jpg" class="img-fluid mainbg" alt="">
+                    </div>
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center text-center">
+                        <h1>Dive into AnimeWorld!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- section search -->
+    <section class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Search</h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search Anime">
+                    <button class="btn btn-primary" type="button" id="searchButton">Search Anime</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de resultados de búsqueda -->
+        <div class="row" id="row-search-results"></div>
+    </section>
+<!-- section ranking -->
+    <section class="container-fluid">
+        <div class="row" id="row-ranking">
+         <div class="col-md-12">
+            <h2>Ranking</h2>
+         </div>
+        </div>
+
+        <div class="modal fade" id="synopsisModal" tabindex="-1" aria-labelledby="synopsisModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="modal-title" id="synopsisModalLabel">Synopsis</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="synopsisContent">
+                  <!-- Sinopsis se cargará aquí -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- section carousel -->
+    <div class="container-fluid g-0">    
+        <div class="row">
+            <div class="column">
+                <p>Action</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col g-0">
+                <div class="container-fluid text-center my-3 g-0">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel1" class="carousel slide " data-bs-ride="carousel" >
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.mundodeportivo.com/alfabeta/hero/2021/08/jujutsu-kaisen-visual.jpg?width=1200" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Jujutsu Kaisen</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://1.bp.blogspot.com/-2uagO5O7YBY/YGqBWj-tKdI/AAAAAAAAquA/hYT7BQkmVKQQDJxDE0zal_Txr7BJ-t8IQCLcBGAsYHQ/w1280-h720-p-k-no-nu/Episodios-Code-Geass-Lelouch-of-the-Rebellion-Relleno-Orden-Cronologico.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Code Geass</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://parallax.com.pe/wp-content/uploads/2021/11/kimetsu-01.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Kimetsu no Yaiba</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/09/toda-la-cronologia-de-la-serie-de-anime-kingdom.jpg?width=768&aspect_ratio=16:9&format=nowebp" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Kingdom</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://multianime.com.mx/wp-content/uploads/2020/08/100-ilustraciones-fate-stay-night-heavens-feel-3-iii.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Fate/Stay Night</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://cuarteldelmetal.com/wp-content/uploads/2023/04/cyberpunk-edgerunners-soundtrack-2023-metal.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Cyberpunk: Edgerunners</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i.redd.it/imo-the-elysium-has-the-worst-animation-ever-in-the-saint-v0-otj8x6themra1.png?width=1440&format=png&auto=webp&s=64371e796a29e77d3410f1ba199d8729353f38de" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Saint Seiya</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://ds-images.bolavip.com/news/image/1200/740/?src=https://images.bolavip.com/webp/spo/full/SPO_20231108_SPO_48379_Diseno-sin-titulo-2023-11-08T093416.851.webp" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Shingeki no Kyojin</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel1" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel1" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>		
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Adventure</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col g-0">
+                <div class="container-fluid text-center my-3 g-0">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel2" class="carousel slide " data-bs-ride="carousel" >
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://los40.cl/wp-content/uploads/2021/10/hunter-x-hunter.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Hunter x Hunter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://static.animecorner.me/2023/08/1692784819-10357.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Sousou no Frieren</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://static.catapult.co/cdn-cgi/image/width=1170,height=658,dpr=2,fit=cover,format=auto/production/stories/30190/cover_photos/original/fullmetal_site_1622753380_1637683000.jpg">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Fullmetal Alchemist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/11/anime-de-one-piece-mejora-el-final-del-arco-de-wano.jpg?width=1200" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">One Piece</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.latercera.com/resizer/2FiSmCVF30C3eXhd_uh1dLEPBAg=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/HJUNISD4PRFBNPV2YTOTLWBTQE.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Bleach</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://d17389e216ygm.cloudfront.net/wp-content/uploads/CE_TGCF-2.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Tian Guan Ci Fu</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://theflame.unishanoi.org/wp-content/uploads/2015/10/your-mom.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Mushishi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/08/mushoku_tensei.1692398147.4085.jpg?width=1200" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Mushoku Tensei</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>		
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Comedy</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col g-0">
+                <div class="container-fluid text-center my-3 g-0">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel3" class="carousel slide " data-bs-ride="carousel" >
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2023/06/feature.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Gintama</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2020/10/Kaguya-Sama-Love-is-War.jpg?resize=1200%2C720&quality=80&ssl=1" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Kaguya-sama</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2017/12/17122705480862-e1514353799580.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Owarimonogatari</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.chirchi.com/wp-content/uploads/2023/10/Bocchi-The-Rock-25.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Bocchi The Rock</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i0.wp.com/cuatrobastardos.com/wp-content/uploads/2023/03/i314aLh8nWdoov0Tk7nEg5zTIhS.jpg?fit=3840%2C2160&ssl=1" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Mob Psycho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJC4fZAjboD7J5x9dfrboRIS2adEZu4jOag&usqp=CAU" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">GTO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/06/Con-estas-ilustraciones-Spy-x-Family-se-despide-de-la-parte-1-de-su-primera-temporada.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Spy x Family</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2019/04/tatami-galaxy-e1555037990495.jpg?fit=1280%2C640&ssl=1" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">The Tatami Galaxy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>		
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Fantasy</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col g-0">
+                <div class="container-fluid text-center my-3 g-0">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel4" class="carousel slide " data-bs-ride="carousel" >
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsso5dFSY1Uke-ge4GbzMHC0Qti_qx0-4EZxx0npBEAn799jUHL-d32OkGHCp7-IJHwwc&usqp=CAU" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Violet Evergarden</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://somoskudasai.com/wp-content/uploads/2023/01/Made-in-Abyss.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Made in Abyss</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://i.blogs.es/1abfa9/berserk-la-edad-dorada/1366_2000.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Berserk</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/06/chainsaw-man-3064222.jpg?tf=3840x" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Chainsaw Man</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://a.storyblok.com/f/178900/640x360/0138d887f4/a96fd02144e99fce863ce6c5fe00f3b31614305609_main.jpg/m/filters:quality(95)format(webp)" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Kage no Jitsuyokusha</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://www.anmosugoi.com/wp-content/uploads/2021/12/link-click-banner.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Shiguang Dailiren</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://areajugones.sport.es/wp-content/uploads/2021/07/webpnet-compress-image-36.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Konosuba</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="https://ramenparados.com/wp-content/uploads/2009/06/kurociel.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                                <a href="">Kuroshitsuji</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel4" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel4" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>		
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="anime.js"></script>
+</body>
+</html>

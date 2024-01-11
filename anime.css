@@ -1,0 +1,113 @@
+.mainbg{
+    height: 1200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.card-img-overlay h1 {
+    color:rgb(255, 1, 1);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 200px;
+    
+    
+}
+
+.card-img-overlay a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 45px;
+    font-weight: bold;
+    overflow: auto;
+}
+
+/* Estilo para la sección de búsqueda */
+#row-search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Estilo para las cards de búsqueda */
+  .search-card {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para la imagen dentro de la card */
+  .search-card img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+/* Estilo para el fondo del cuadro de diálogo modal */
+#synopsisModal .modal-content {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Estilo para el fondo del botón de cierre del modal */
+  #synopsisModal .btn-close {
+    color: white;
+  }
+  
+  /* Estilo para el fondo del cuerpo del modal */
+  #synopsisContent {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Estilo para el botón de cierre del modal */
+  #synopsisModal .modal-footer .btn-secondary {
+    background-color: #6f42c1; /* Puedes cambiar esto al color que desees */
+    color: white;
+  }
+  
+  /* Estilo para el botón de cierre del modal al pasar el ratón sobre él */
+  #synopsisModal .modal-footer .btn-secondary:hover {
+    background-color: #55308e; /* Puedes cambiar esto al color que desees */
+    color: white;
+  }
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
