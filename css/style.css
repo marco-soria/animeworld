@@ -34,6 +34,7 @@ body {
   }
 
   .logo {
+    padding-left: 10px;
     font-size: 40px; /* Ajusta según sea necesario */
     font-weight: bold;
     text-decoration: none; /* Evita la subrayado por defecto en los enlaces */
@@ -73,6 +74,7 @@ body {
   
     .logo {
       margin: 10px;
+      padding-left: 20px;
     }
   
     .navbar-toggle {
