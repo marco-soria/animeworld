@@ -1,37 +1,96 @@
 * {
-    /* margin: 0;
-    padding: 0; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #111;
-    
+    background-color: #111;    
 }
 
-.mainbg{
-    height: 1200px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.card-img-overlay h1 {
-    color:rgb(255, 1, 1);
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    font-size: 200px;
-    
-    
-}
-
-.card-img-overlay a {
+/* navbar */
+.navbar {
+    font-size: 30px;
+    background: #111;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Alinea verticalmente los elementos en la pantalla pequeña */
+  }
+  
+  .nav-links {
     text-decoration: none;
-    color: white;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    font-size: 45px;
-    font-weight: bold;
-    overflow: auto;
-}
+    color: rgb(158, 2, 249);
+  }
 
+  .logo {
+    font-size: 40px; /* Ajusta según sea necesario */
+    font-weight: bold;
+    text-decoration: none; /* Evita la subrayado por defecto en los enlaces */
+    color: rgb(158, 2, 249);
+    margin: 10px 20px;
+}
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px 20px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .main-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px; /* Ajusta según sea necesario */
+      right: 0;
+      background: #111; 
+      width: 100%;
+      margin: 0;
+      z-index: 1100; /* Elimina el margen en la pantalla pequeña */
+    }
+  
+    .main-nav.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      margin: 10px 20px;
+    }
+  
+    .logo {
+      margin: 10px;
+    }
+  
+    .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 50%; /* Ajusta según sea necesario para centrar verticalmente */
+    transform: translateY(-50%); /* Centra verticalmente el icono hamburguesa */
+    right: 20px;
+    color: rgb(158, 2, 249);
+    font-size: 30px;
+    }
+  
+    .navbar-toggle i {
+      margin-right: 10px;
+    }
+  }
+
+/* footer */
 footer {
     background-color: #111;
 }
@@ -111,10 +170,33 @@ footer {
     margin: 0px 5px;
 }
 
+.mainbg {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-img-overlay h1 {
+    color: rgb(255, 1, 1);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 8vw; /* Utiliza vw (ancho de la ventana) para el tamaño del texto */
+    max-width: 2000px; /* Establece un ancho máximo para el texto */
+}
+
+.card-img-overlay a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 2.5vw; /* Utiliza vw para el tamaño del texto */
+    font-weight: bold;
+    overflow: auto;
+}
+
 @media (max-width: 992px){
     .footerNav ul{
         display: flex;
         flex-direction: column;
+        padding-left: 0;
     }
     .footerNav ul li{
         width: 100%;
