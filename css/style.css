@@ -27,7 +27,7 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-bottom: 0; /* Alinea verticalmente los elementos en la pantalla pequeña */
+    margin-bottom: 0; 
   }
   
   .nav-links {
@@ -54,6 +54,10 @@ body {
   }
   
   
+/* .navcarousel img{
+  margin-top: 80px;
+} */
+
 /* footer */
 footer {
     background-color: #111;
