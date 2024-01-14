@@ -51,47 +51,7 @@ body {
     display: none;
   }
   
-  @media screen and (max-width: 992px) {
-    .main-nav {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 80px; /* Ajusta según sea necesario */
-      right: 0;
-      background: #111; 
-      width: 100%;
-      margin: 0;
-      z-index: 1100; /* Elimina el margen en la pantalla pequeña */
-    }
   
-    .main-nav.active {
-      display: flex;
-    }
-  
-    .nav-links {
-      margin: 10px 20px;
-    }
-  
-    .logo {
-      margin: 10px;
-      padding-left: 20px;
-    }
-  
-    .navbar-toggle {
-    display: block;
-    position: absolute;
-    top: 50%; /* Ajusta según sea necesario para centrar verticalmente */
-    transform: translateY(-50%); /* Centra verticalmente el icono hamburguesa */
-    right: 20px;
-    color: rgb(158, 2, 249);
-    font-size: 30px;
-    }
-  
-    .navbar-toggle i {
-      margin-right: 10px;
-    }
-  }
-
 /* footer */
 footer {
     background-color: #111;
@@ -194,6 +154,8 @@ footer {
     overflow: auto;
 }
 
+
+
 @media (max-width: 992px){
     .footerNav ul{
         display: flex;
@@ -205,4 +167,45 @@ footer {
         text-align:center;
         margin: 10px;
     }
+}
+
+@media screen and (max-width: 992px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #111;
+    width: 100%;
+    margin: 0;
+    z-index: 1100;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .nav-links {
+    margin: 10px 20px;
+  }
+
+  .logo {
+    margin: 10px;
+    padding-left: 20px;
+  }
+
+  .navbar-toggle {
+  display: block;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  right: 20px;
+  color: rgb(158, 2, 249);
+  font-size: 30px;
+  }
+
+  .navbar-toggle i {
+    margin-right: 10px;
+  }
 }
