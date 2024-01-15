@@ -39,19 +39,23 @@ function loadCategoriesAndProducts() {
     const productsContainer = document.getElementById('products-container');
     const searchInput = document.getElementById('searchInput');
 
-    const uniqueCategories = [...new Set(productsData.map(product => product.category))];
-    uniqueCategories.push('All'); // Agrega la categoría 'All' para mostrar todos los productos
+    // Verificar si las categorías ya se han cargado
+    if (categoriesList.children.length === 0) {
+        // Cargar categorías solo si aún no se han cargado
+        const uniqueCategories = [...new Set(productsData.map(product => product.category))];
+        uniqueCategories.unshift('All'); // Agrega la categoría 'All' al principio del array
 
-    uniqueCategories.forEach(category => {
-        const listItem = document.createElement('li');
-        listItem.className = 'list-group-item';
-        listItem.textContent = category;
-        categoriesList.appendChild(listItem);
+        uniqueCategories.forEach(category => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item';
+            listItem.textContent = category;
+            categoriesList.appendChild(listItem);
 
-        listItem.addEventListener('click', () => {
-            filterProducts(category);
+            listItem.addEventListener('click', () => {
+                filterProducts(category);
+            });
         });
-    });
+    }
 
     // Paginación
     const paginationContainer = document.createElement('div');
