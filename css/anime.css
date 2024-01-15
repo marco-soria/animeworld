@@ -5,16 +5,13 @@
   color: rgb(158, 2, 249);
 }
 
-
-
-.mainbg{
-    height: 1200px;
-    object-fit: cover;
-    width: 100%;
+body {
+  background-color: #111;    
 }
 
+
 .carousel-item img {
-    height: 300px; /* Ajusta la altura según tus necesidades */
+    height: 300px; 
     object-fit: cover;
     width: 100%;
     
@@ -121,33 +118,6 @@
     transform: translateX(0);
 }
 
-body {
-  background-color: #111;
-  
-}
-
-.mainbg{
-  height: 1200px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.card-img-overlay h1 {
-  color:rgb(255, 1, 1);
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-  font-size: 200px;
-  
-  
-}
-
-.card-img-overlay a {
-  text-decoration: none;
-  color: white;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-  font-size: 45px;
-  font-weight: bold;
-  overflow: auto;
-}
 
 /* navbar */
 .navbar {
