@@ -33,7 +33,7 @@
 
 
 <!-- section search -->
-    <section class="container-fluid ms-4 me-4" style="margin-top: 80px;">
+    <section class="container-fluid" style="margin-top: 80px;">
         <div class="row">
             <div class="col-md-12">
                 <h2>Search</h2>
@@ -47,6 +47,33 @@
         <!-- Contenedor de resultados de búsqueda -->
         <div class="row" id="row-search-results"></div>
     </section>    
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <h4>Categories</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                
+                <ul class="list-group" id="js-categories-list">
+                    <li class="list-group-item" onclick="filterProducts('All')">All</li>
+                    <li class="list-group-item" onclick="filterProducts('Accessories')">Accessories</li>
+                    <li class="list-group-item" onclick="filterProducts('Blu-ray')">Blu-ray</li>
+                    <li class="list-group-item" onclick="filterProducts('Clothing')">Clothing</li>
+                    <li class="list-group-item" onclick="filterProducts('Figures')">Figures</li>
+                    <li class="list-group-item" onclick="filterProducts('Manga')">Manga</li>
+                </ul>
+            </div>
+
+            <!-- Productos en la parte derecha -->
+            <div class="col-md-9">
+                <!-- Lista de productos generada dinámicamente con JavaScript -->
+                <div id="products-container" class="row"></div>
+            </div>
+        </div>
+    </div>
+
+
 
     <footer>
         <div class="footerContainer">

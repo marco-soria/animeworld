@@ -1,23 +1,48 @@
-/*navbar*/
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active");
+navBarToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
 });
 
 const productsData = [
-    // Agrega 12 objetos para cada categoría (accessories, blu-ray, clothing, figures, manga)
-    // Cada objeto debe tener las keys: name, description, image, category, price
-    // Ejemplo:
-    { name: 'Producto 1', description: 'Descripción del producto', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
-    { name: 'Producto 2', description: 'Otra descripción', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
-    // ... Repite el mismo formato para otros productos
+   
+    { name: 'Accessory 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
+    { name: 'Accessory 2', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 3', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
+    { name: 'Accessory 4', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 5', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
+    { name: 'Accessory 6', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 7', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
+    { name: 'Accessory 8', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 10', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 11', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Accessory 12', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
+    { name: 'Blue 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Blue 2', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 3', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Accessory 4', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 5', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Accessory 6', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 7', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Accessory 8', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 10', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 11', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Accessory 12', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    
 ];
 
 function loadCategoriesAndProducts() {
-    const categoriesList = document.getElementById('categories');
-    const productsContainer = document.getElementById('products');
+    const categoriesList = document.getElementById('js-categories-list');
+    const productsContainer = document.getElementById('products-container');
     const searchInput = document.getElementById('searchInput');
 
     const uniqueCategories = [...new Set(productsData.map(product => product.category))];
@@ -37,47 +62,70 @@ function loadCategoriesAndProducts() {
     renderProducts(productsData);
 
     searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        const filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
-        renderProducts(filteredProducts);
+        searchProducts();
     });
 }
 
 function renderProducts(products) {
-    const productsContainer = document.getElementById('products');
+    const productsContainer = document.getElementById('products-container');
     productsContainer.innerHTML = '';
 
-    products.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.className = 'col-md-4 mb-4';
-        productCard.innerHTML = `
-            <div class="card">
-                <img src="img/${product.image}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text">$${product.price.toFixed(2)}</p>
-                        <i class="far ${product.favorite ? 'fa-heart' : 'fa-heart-o'}" style="cursor: pointer;"></i>
+    if (products.length === 0) {
+        // Mostrar mensaje de "Product not found"
+        const notFoundMessage = document.createElement('p');
+        notFoundMessage.textContent = 'Product not found';
+        notFoundMessage.className = 'not-found-message';
+        productsContainer.appendChild(notFoundMessage);
+    } else {
+        // Mostrar productos
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'col-md-4 mb-4';
+            productCard.innerHTML = `
+                <div class="card">
+                    <img src="img/${product.category.toLowerCase()}/${product.image}" class="card-img-top" alt="${product.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text">$${product.price.toFixed(2)}</p>
+                            <i class="far ${product.favorite ? 'fa-heart' : 'fa-heart-o'}" style="cursor: pointer;"></i>
+                        </div>
+                        <button class="btn btn-primary btn-block mt-2 w-100">Add to Cart</button>
                     </div>
-                    <button class="btn btn-primary btn-block mt-2">Add to Cart</button>
                 </div>
-            </div>
-        `;
+            `;
 
-        const heartIcon = productCard.querySelector('i');
-        heartIcon.addEventListener('click', () => {
-            product.favorite = !product.favorite;
-            heartIcon.classList.toggle('fa-heart');
-            heartIcon.classList.toggle('fa-heart-o');
+            const heartIcon = productCard.querySelector('i');
+            heartIcon.addEventListener('click', () => {
+                product.favorite = !product.favorite;
+                heartIcon.classList.toggle('fa-heart');
+                heartIcon.classList.toggle('fa-heart-o');
+            });
+
+            productsContainer.appendChild(productCard);
         });
-
-        productsContainer.appendChild(productCard);
-    });
+    }
 }
 
 function filterProducts(category) {
-    const filteredProducts = (category === 'All') ? productsData : productsData.filter(product => product.category === category);
+    const searchInput = document.getElementById('searchInput');
+    searchInput.value = ''; // Limpiar el campo de búsqueda al cambiar de categoría
+
+    if (category === 'All') {
+        renderProducts(productsData);
+    } else {
+        const filteredProducts = productsData.filter(product => product.category === category);
+        renderProducts(filteredProducts);
+    }
+}
+
+// Función para realizar la búsqueda por nombre
+function searchProducts() {
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
     renderProducts(filteredProducts);
 }
 
+// Llamada a la función loadCategoriesAndProducts() al cargar la página
 window.addEventListener('load', loadCategoriesAndProducts);
