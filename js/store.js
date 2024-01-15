@@ -15,28 +15,22 @@ const productsData = [
     { name: 'Accessory 6', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Accessory 7', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
     { name: 'Accessory 8', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
-    { name: 'Accessory 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Accessories', price: 19.99, favorite: false },
-    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
-    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Accessory 10', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Accessory 11', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Accessory 12', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Accessories', price: 24.99, favorite: false },
     { name: 'Blue 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
     { name: 'Blue 2', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 3', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
-    { name: 'Accessory 4', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 5', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
-    { name: 'Accessory 6', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 7', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
-    { name: 'Accessory 8', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 1', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
-    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 10', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 11', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
-    { name: 'Accessory 12', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 3', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Blue 4', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 5', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Blue 6', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 7', description: 'Description for Accessory 1', image: 'accessories/product1.jpg', category: 'Blu-ray', price: 19.99, favorite: false },
+    { name: 'Blue 8', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 9', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 10', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 11', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
+    { name: 'Blue 12', description: 'Description for Accessory 2', image: 'accessories/product2.jpg', category: 'Blu-ray', price: 24.99, favorite: false },
     
 ];
 
@@ -82,27 +76,27 @@ function renderProducts(products) {
             const productCard = document.createElement('div');
             productCard.className = 'col-md-4 mb-4';
             productCard.innerHTML = `
-                <div class="card">
-                    <img src="img/${product.category.toLowerCase()}/${product.image}" class="card-img-top" alt="${product.name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${product.name}</h5>
-                        <div class="d-flex justify-content-between">
-                            <p class="card-text">$${product.price.toFixed(2)}</p>
-                            <i class="far ${product.favorite ? 'fa-heart' : 'fa-heart-o'}" style="cursor: pointer;"></i>
-                        </div>
-                        <button class="btn btn-primary btn-block mt-2 w-100">Add to Cart</button>
+            <div class="card">
+                <img src="img/${product.category.toLowerCase()}/${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <div class="d-flex justify-content-between">
+                        <p class="card-text">$${product.price.toFixed(2)}</p>
+                        <i class="heart-icon fa ${product.favorite ? 'fa-solid' : 'fa-regular'} fa-heart" style="cursor: pointer; color: #ff0000;"></i>
                     </div>
+                    <button class="btn btn-primary btn-block mt-2 w-100">Add to Cart</button>
                 </div>
-            `;
+            </div>
+        `;
 
-            const heartIcon = productCard.querySelector('i');
-            heartIcon.addEventListener('click', () => {
-                product.favorite = !product.favorite;
-                heartIcon.classList.toggle('fa-heart');
-                heartIcon.classList.toggle('fa-heart-o');
-            });
+        const heartIcon = productCard.querySelector('.heart-icon');
+        heartIcon.addEventListener('click', () => {
+            product.favorite = !product.favorite;
+            heartIcon.classList.toggle('fa-solid');
+            heartIcon.classList.toggle('fa-regular');
+        });
 
-            productsContainer.appendChild(productCard);
+        productsContainer.appendChild(productCard);
         });
     }
 }
@@ -118,7 +112,6 @@ function filterProducts(category) {
         renderProducts(filteredProducts);
     }
 }
-
 // Función para realizar la búsqueda por nombre
 function searchProducts() {
     const searchInput = document.getElementById('searchInput');
@@ -126,6 +119,5 @@ function searchProducts() {
     const filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
     renderProducts(filteredProducts);
 }
-
 // Llamada a la función loadCategoriesAndProducts() al cargar la página
 window.addEventListener('load', loadCategoriesAndProducts);
