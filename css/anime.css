@@ -1,3 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(158, 2, 249);
+}
+
+
+
 .mainbg{
     height: 1200px;
     object-fit: cover;
@@ -110,12 +119,6 @@
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 body {

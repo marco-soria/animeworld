@@ -5,8 +5,18 @@
     color: rgb(158, 2, 249);
 }
 
+
+
 body {
     background-color: #111;    
+}
+
+h2 {
+  color:white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+ 
+  
+  
 }
 
 /* navbar */
@@ -160,7 +170,6 @@ footer {
     font-weight: bold;
     overflow: auto;
 }
-
 
 
 @media (max-width: 992px){
