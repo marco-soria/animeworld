@@ -53,11 +53,61 @@ function loadCategoriesAndProducts() {
         });
     });
 
-    renderProducts(productsData);
+    // Paginación
+    const paginationContainer = document.createElement('div');
+    paginationContainer.className = 'pagination-container';
+
+    const prevLink = document.createElement('a');
+    prevLink.innerHTML = 'Prev &lt';
+    prevLink.addEventListener('click', () => {
+        if (currentPage > 1) {
+            navigatePages(-1);
+        }
+    });
+
+    const pageNumber = document.createElement('span');
+    pageNumber.textContent = '1';
+
+    const nextLink = document.createElement('a');
+    nextLink.innerHTML = '&gt Next';
+    nextLink.addEventListener('click', () => {
+        const lastPage = Math.ceil(productsData.length / productsPerPage);
+        if (currentPage < lastPage) {
+            navigatePages(1);
+        }
+    });
+
+    paginationContainer.appendChild(prevLink);
+    paginationContainer.appendChild(pageNumber);
+    paginationContainer.appendChild(nextLink);
+
+    // Insertar la paginación después del contenedor de productos
+    productsContainer.insertAdjacentElement('afterend', paginationContainer);
+
+    // Inicializar la paginación
+    navigatePages(0);
 
     searchInput.addEventListener('input', () => {
         searchProducts();
     });
+}
+
+let currentPage = 1;
+const productsPerPage = 12;
+
+function navigatePages(direction) {
+    currentPage += direction;
+
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+
+    const currentProducts = productsData.slice(startIndex, endIndex);
+    renderProducts(currentProducts);
+
+    // Actualizar el número de página
+    const pageNumber = document.querySelector('.pagination-container span');
+    pageNumber.textContent = currentPage;
+
 }
 
 function renderProducts(products) {
@@ -106,18 +156,20 @@ function filterProducts(category) {
     searchInput.value = ''; // Limpiar el campo de búsqueda al cambiar de categoría
 
     if (category === 'All') {
-        renderProducts(productsData);
+        renderProducts(productsData.slice(0, productsPerPage));  // Mostrar solo los primeros productos en 'All'
     } else {
         const filteredProducts = productsData.filter(product => product.category === category);
-        renderProducts(filteredProducts);
+        renderProducts(filteredProducts.slice(0, productsPerPage));  // Mostrar solo los primeros productos en la categoría seleccionada
     }
 }
-// Función para realizar la búsqueda por nombre
+
+// Función de búsqueda por nombre
 function searchProducts() {
     const searchInput = document.getElementById('searchInput');
     const searchTerm = searchInput.value.toLowerCase();
     const filteredProducts = productsData.filter(product => product.name.toLowerCase().includes(searchTerm));
-    renderProducts(filteredProducts);
+    renderProducts(filteredProducts.slice(0, productsPerPage));  // Mostrar solo los primeros productos en la búsqueda
 }
+
 // Llamada a la función loadCategoriesAndProducts() al cargar la página
 window.addEventListener('load', loadCategoriesAndProducts);
