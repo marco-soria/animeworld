@@ -67,7 +67,7 @@ const setAnimeView = (results) => {
   results.forEach((result, index) => {
     const synopsisString = JSON.stringify(result.synopsis).replace(/'/g, "&apos;").replace(/"/g, "&quot;");
     const html = `
-      <div class="col-md-4 mt-3 g-0">
+      <div class="col-md-3 mt-3 g-0">
         <div class="card" style="height: 1100px;">
           <img class="card-img-top mt-2"
             style="object-fit: cover; height: 80%;"
