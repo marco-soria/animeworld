@@ -10,12 +10,12 @@ body {
 }
 
 
-.carousel-item img {
+/* .carousel-item img {
     height: 300px; 
     object-fit: cover;
     width: 100%;
     
-}
+} */
 
 .card-img-overlay h1 {
     color:rgb(255, 1, 1);
