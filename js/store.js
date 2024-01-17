@@ -1,9 +1,39 @@
-let mainNav = document.getElementById("js-menu");
+/*navbar*/
+let mainNav = document.getElementById("main-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
+let subMenu = document.querySelector(".sub-menu");
+let storeMenu = document.querySelector(".store-menu");
+let linkStore = document.getElementById("linkStore");
+let linkMenu = document.getElementById("linkMenu");
 
-navBarToggle.addEventListener("click", function () {
-    mainNav.classList.toggle("active");
+navBarToggle.addEventListener("click", function(event) {
+  event.preventDefault();
+  subMenu.classList.toggle("active");
+  storeMenu.classList.toggle("active");
 });
+
+linkMenu.addEventListener("click", function(event) {
+  event.preventDefault();
+  mainNav.classList.toggle("active");
+  storeMenu.classList.remove("active");
+});
+
+linkStore.addEventListener("click", function(event) {
+  event.preventDefault();
+  storeMenu.classList.toggle("active");
+  mainNav.classList.remove("active");
+});
+
+document.querySelectorAll('.store-content a').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      // Ocultamos el menú desplegable después de hacer clic en una categoría
+      subMenu.classList.remove('active');
+      storeMenu.classList.remove('active');
+    });
+  });
+
+
 
 const productsData = [
    
