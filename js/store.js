@@ -24,6 +24,15 @@ linkStore.addEventListener("click", function(event) {
   mainNav.classList.remove("active");
 });
 
+document.querySelectorAll('.store-content a').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      // Ocultamos el menú desplegable después de hacer clic en una categoría
+      subMenu.classList.remove('active');
+      storeMenu.classList.remove('active');
+    });
+  });
+
 
 
 const productsData = [
