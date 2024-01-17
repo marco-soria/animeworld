@@ -10,26 +10,60 @@
 </head>
 <body>
 /*navbar*/
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-        <a href="#" class="logo">AnimeWorld</a>
-        <ul class="main-nav" id="js-menu">
-        <li>
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo">AnimeWorld</a>
+
+    <ul class="main-nav" id="main-menu">
+        <li class="menu-content">
             <a href="index.html" class="nav-links">Home</a>
         </li>
-        <li>
+        <li class="menu-content">
             <a href="anime.html" class="nav-links">Anime</a>
         </li>
-        <li>
+        <li class="menu-content">
             <a href="#" class="nav-links">Store</a>
         </li>
-        <li>
+        <li class="menu-content">
             <a href="#" class="nav-links">Contact</a>
         </li>
-        </ul>
-    </nav>
+    </ul>
+
+    <ul class="sub-menu">
+        <li class="sub-menu-content">
+            <a href="" class="nav-links" id="linkStore">Store</a>
+        </li>
+        <li class=" sub-menu-content">
+            <a href="" class="nav-links" id="linkMenu">Menu</a>
+        </li>
+    </ul>
+
+    <!-- Categorías de productos bajo "Store" -->
+    <ul class="store-menu">
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('All')">All</a>
+        </li>
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('Accessories')">Accessories</a>
+        </li>
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('Blu-ray')">Blu-ray</a>
+        </li>
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('Clothing')">Clothing</a>
+        </li>
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('Figures')">Figures</a>
+        </li>
+        <li class="store-content">
+            <a href="#" class="nav-links" onclick="filterProducts('Manga')">Manga</a>
+        </li>
+    </ul>
+</nav>
+
+
 
 
 <!-- section search -->
