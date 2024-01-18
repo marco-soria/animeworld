@@ -68,13 +68,17 @@ body {
   color: #9e02f9;
 }
 
+.divlogo {
+  margin-left: 20px;
+}
+
 .logo {
   padding-left: 10px;
-  font-size: 40px; /* Ajusta según sea necesario */
+  font-size: 40px; 
   font-weight: bold;
-  text-decoration: none; /* Evita la subrayado por defecto en los enlaces */
+  text-decoration: none; 
   color: #9e02f9;
-  margin: 10px 20px;
+  margin: 10px;
 }
 
 .main-nav li {
