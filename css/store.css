@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: rgb(158, 2, 249);
+    color: #9e02f9;
     font-family: Poppins;
 }
 
@@ -13,8 +13,8 @@
   max-height: 40vh;
   object-fit: cover;
 } */
-/* body {
-    background-color: #111;    
+body {
+    background-color: #030637;    
 }
  */
 /* h2 {
@@ -28,8 +28,8 @@
 /* navbar */
 .navbar {
   font-size: 30px;
-  background: #111;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #030637;
+  border: 1px solid #030637;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -65,7 +65,7 @@
 
 .nav-links {
   text-decoration: none;
-  color: rgb(158, 2, 249);
+  color: #9e02f9;
 }
 
 .logo {
@@ -73,7 +73,7 @@
   font-size: 40px; /* Ajusta según sea necesario */
   font-weight: bold;
   text-decoration: none; /* Evita la subrayado por defecto en los enlaces */
-  color: rgb(158, 2, 249);
+  color: #9e02f9;
   margin: 10px 20px;
 }
 
@@ -101,9 +101,9 @@
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 140px;
+  top: 130px;
   right: 0;
-  background: #111;
+  background: #030637;
   width: 100%;
   margin: 0;
   z-index: 1100;
@@ -118,7 +118,7 @@
   position: absolute;
   top: 80px;
   right: 0;
-  background: #111;
+  background: #030637;
   width: 100%;
   margin: 0;
   z-index: 1100;
@@ -133,9 +133,9 @@
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 140px;
+  top: 130px;
   right: 0;
-  background: #111;
+  background: #030637;
   width: 100%;
   margin: 0;
   z-index: 1100;
@@ -162,7 +162,7 @@ position: absolute;
 top: 50%; 
 transform: translateY(-50%); 
 right: 20px;
-color: rgb(158, 2, 249);
+color: #9e02f9;
 font-size: 30px;
 }
 
@@ -176,7 +176,7 @@ font-size: 30px;
 
 /* footer */
 footer {
-    background-color: #111;
+    background-color: #030637;
 }
 
 .footerContainer {
@@ -192,24 +192,24 @@ footer {
 .mediaIcons a {
     text-decoration: none;
     padding: 10px;
-    background-color: rgb(158, 2, 249);
+    background-color: #9e02f9;
     margin: 10px;
     border-radius: 50%;
 }
 
 .mediaIcons a i{
     font-size: 2em;
-    color: black;
+    color: #030637;
     opacity: 0.9;
 }
 
 .mediaIcons a:hover{
-    background-color: #111;
+    background-color: #030637;
     transition: 0.5s;
 }
 
 .mediaIcons a:hover i{
-    color: rgb(158, 2, 249);
+    color: #9e02f9;
     transition: 0.5s;
 }
 
@@ -229,7 +229,7 @@ footer {
     font-size: 1.3em;
     opacity: 0.7s;
     transition: 0.5s;
-    color: rgb(158, 2, 249);
+    color: #9e02f9;
 }
 
 .footerNav ul li a:hover{
@@ -242,12 +242,12 @@ footer {
 }
 
 .footerCopyright p{
-    color: rgb(158, 2, 249);
+    color: #9e02f9;
 }
 
 .designer{
     opacity: 0.7px;
-    color: rgb(158, 2, 249);
+    color: #9e02f9;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 400px;
