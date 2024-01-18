@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: rgb(158, 2, 249);
+    font-family: Poppins;
 }
 
 body {
@@ -16,6 +17,12 @@ body {
   
   
 } */
+
+.temporal-media {
+  border: solid 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
 /* navbar */
 .navbar {
