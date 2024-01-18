@@ -14,7 +14,7 @@ function toggleView(view) {
 
   if (view === 'signin') {
       signupCard.innerHTML = `
-      <div class="card-body">
+      <div class="card-body formbg">
           <img src="./img/signin/momosignin.jpg" class="img-fluid" alt="Signup Image">
           <form id="signupForm">
               <div class="mb-3 mt-3">
@@ -24,11 +24,11 @@ function toggleView(view) {
                   <input type="password" class="form-control" placeholder="Password">
               </div>
               <div class="mb-3" id="forgotPasswordContainer">
-                  <a href="#" id="forgotPasswordLink">Forgot your password?</a>
+                  <a href="#" id="forgotPasswordLink" style="color:lightblue">Forgot your password?</a>
               </div>
-              <div class="mb-3 d-flex justify-content-center">
-                  <button type="button" class="btn btn-primary me-5" onclick="toggleView('signin')">Sign In</button>
-                  <button type="button" class="btn btn-secondary ms-5" onclick="toggleView('signup')">Sign Up</button>
+              <div class="mb-3 d-flex justify-content-evenly">
+                  <button type="button" class="btn btn-secondary signinbutton" onclick="toggleView('signin')">Sign In</button>
+                  <button type="button" class="btn btn-secondary signupbutton" onclick="toggleView('signup')">Sign Up</button>
               </div>
           </form>
       </div>
@@ -38,7 +38,7 @@ function toggleView(view) {
       forgotPasswordContainer.style.display = 'block';
   } else if (view === 'signup') {
       signupCard.innerHTML = `
-      <div class="card-body">
+      <div class="card-body formbg">
           <img src="./img/signin/momosignup.webp" class="img-fluid" alt="Signup Image">
           <form id="signupForm">
               <div class="mb-3 mt-3">
@@ -49,11 +49,11 @@ function toggleView(view) {
               </div>
               <div class="mb-3" id="subscribeContainer">
                   <input type="checkbox" class="form-check-input" id="subscribeCheckbox">
-                  <label class="form-check-label" for="subscribeCheckbox">Subscribe to this website</label>
+                  <label class="form-check-label" for="subscribeCheckbox" style="color:lightblue">Subscribe to this website</label>
               </div>
-              <div class="mb-3 d-flex justify-content-center">
-                  <button type="button" class="btn btn-primary me-5" onclick="toggleView('signin')">Sign In</button>
-                  <button type="button" class="btn btn-secondary ms-5" onclick="toggleView('signup')">Sign Up</button>
+              <div class="mb-3 d-flex justify-content-evenly">
+                  <button type="button" class="btn btn-secondary signinbutton" onclick="toggleView('signin')">Sign In</button>
+                  <button type="button" class="btn btn-secondary signupbutton" onclick="toggleView('signup')">Sign Up</button>
               </div>
           </form>
       </div>

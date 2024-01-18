@@ -10,13 +10,43 @@ body {
     background-color: #030637;    
 }
 
-/* h2 {
+/*backgroundcard*/
+.formbg {
+  background-color: #711DB0;
+  border: solid 4px #9500ff;
+}
+
+/*card buttons*/
+
+.signinbutton {
+  background-color: #E26EE5;
   color:white;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
- 
-  
-  
-} */
+  border: #E26EE5 ;
+ /*  border-radius: 30%;
+  padding: 10px 15px;
+  margin-right: 10px; */
+}
+
+.signinbutton:hover{
+  background-color: #b346b7;
+  color:white;
+  border: #b346b7 ;
+}
+
+.signupbutton {
+  background-color: #C21292;
+  color:white;
+  border: #C21292 ;
+  /* border-radius: 30%;
+  padding: 10px 15px;
+  margin-left: 10px; */
+}
+
+.signupbutton:hover{
+  background-color: #910A67;
+  color:white;
+  border: #910A67 ;
+}
 
 /* navbar */
 .navbar {
