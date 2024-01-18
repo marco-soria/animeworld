@@ -18,6 +18,12 @@ body {
     
 } */
 
+/*backgroundcard*/
+.formbg {
+  background-color: #030637;
+  border: solid 4px #9500ff;
+}
+
 .card-img-overlay h1 {
     color:rgb(255, 1, 1);
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
@@ -33,6 +39,37 @@ body {
     font-size: 45px;
     font-weight: bold;
     overflow: auto;
+}
+
+/* buttons */
+.signinbutton {
+  background-color: #E26EE5;
+  color:white;
+  border: #E26EE5 ;
+ /*  border-radius: 30%;
+  padding: 10px 15px;
+  margin-right: 10px; */
+}
+
+.signinbutton:hover{
+  background-color: #b346b7 !important;
+  color:white !important;
+  border: #b346b7 !important ;
+}
+
+.signupbutton {
+  background-color: #C21292;
+  color:white;
+  border: #C21292 ;
+  /* border-radius: 30%;
+  padding: 10px 15px;
+  margin-left: 10px; */
+}
+
+.signupbutton:hover{
+  background-color: #910A67 !important;
+  color:white !important;
+  border: #910A67 !important;
 }
 
 /* Estilo para la sección de búsqueda */
@@ -74,13 +111,13 @@ body {
   
   /* Estilo para el botón de cierre del modal */
   #synopsisModal .modal-footer .btn-secondary {
-    background-color: #6f42c1; /* Puedes cambiar esto al color que desees */
+    background-color: #C21292;
     color: white;
   }
   
   /* Estilo para el botón de cierre del modal al pasar el ratón sobre él */
   #synopsisModal .modal-footer .btn-secondary:hover {
-    background-color: #55308e; /* Puedes cambiar esto al color que desees */
+    background-color: #C21292;
     color: white;
   }
 

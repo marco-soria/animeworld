@@ -19,16 +19,16 @@ const setSearchResults = (results) => {
       const synopsisString = JSON.stringify(result.synopsis).replace(/'/g, "&apos;").replace(/"/g, "&quot;");
       const html = `
             <div class="col-md-3 mt-3 g-2">
-              <div class="card" style="100%">
-                  <img class="card"
+            <div class="card formbg">
+                  <img class="card border-0"
                       style="max-height: 40vh; object-fit: cover"
                       src="${result.images.jpg.large_image_url}"
                       alt="${result.title}">
                   <div class="card-body text-center">
-                      <h6 class="text-title fs-4">N. ${result.rank}</h6>
-                      <h4 class="text-title" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.title}</h4>
+                      <h6 class="text-title fs-4" style="color: #9500ff;">N. ${result.rank}</h6>
+                      <h4 class="text-title" style="color: #9500ff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.title}</h4>
                       <p class="text-title fs-5">Score: ${result.score}</p>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#synopsisModal" data-synopsis="${synopsisString}" data-title="${result.title}">
+                      <button type="button" class="btn btn-primary signupbutton" data-bs-toggle="modal" data-bs-target="#synopsisModal" data-synopsis="${synopsisString}" data-title="${result.title}">
                           Synopsis
                       </button>
                   </div>
@@ -69,16 +69,16 @@ const setAnimeView = (results) => {
     const synopsisString = JSON.stringify(result.synopsis).replace(/'/g, "&apos;").replace(/"/g, "&quot;");
     const html = `
       <div class="col-md-3 mt-3 g-2">
-        <div class="card">
-          <img class="card"
+        <div class="card formbg">
+          <img class="card border-0"
             style="max-height: 40vh; object-fit: cover"
             src="${result.images.jpg.large_image_url}"
             alt="${result.title}">
           <div class="card-body text-center">
-            <h6 class="text-title fs-4">N. ${result.rank}</h6>
-            <h4 class="text-title" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.title}</h4>
+            <h6 class="text-title fs-4" style="color: #9500ff;">N. ${result.rank}</h6>
+            <h4 class="text-title" style="color: #9500ff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.title}</h4>
             <p class="text-title fs-5">Score: ${result.score}</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#synopsisModal" data-synopsis="${synopsisString}" data-title="${result.title}">
+            <button type="button" class="btn btn-primary signupbutton" data-bs-toggle="modal" data-bs-target="#synopsisModal" data-synopsis="${synopsisString}" data-title="${result.title}">
             Synopsis
           </button>
           </div>

@@ -28,9 +28,9 @@ body {
 }
 
 .signinbutton:hover{
-  background-color: #b346b7;
-  color:white;
-  border: #b346b7 ;
+  background-color: #b346b7 !important;
+  color:white !important;
+  border: #b346b7 !important ;
 }
 
 .signupbutton {
@@ -43,9 +43,9 @@ body {
 }
 
 .signupbutton:hover{
-  background-color: #910A67;
-  color:white;
-  border: #910A67 ;
+  background-color: #C21292 !important;
+  color:white !important;
+  border: #910A67 !important;
 }
 
 /* navbar */
