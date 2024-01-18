@@ -45,6 +45,10 @@ body {
     color: #9e02f9;
   }
 
+  .nav-links:hover {
+    color: #b537ff;
+  }
+
   .divlogo {
     margin-left: 20px;
   }
@@ -126,7 +130,7 @@ footer {
 }
 
 .footerNav ul li a:hover{
-    opacity: 1;
+  color: #b537ff;
 }
 
 .footerCopyright{

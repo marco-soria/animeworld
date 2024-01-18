@@ -52,6 +52,10 @@ body {
     color: #9e02f9;
   }
 
+  .nav-links:hover {
+    color: #b537ff;
+  }
+
   .divlogo {
     margin-left: 20px;
   }
@@ -69,7 +73,7 @@ body {
     text-align: center;
     margin: 15px 20px;
   }
-  
+
   .navbar-toggle {
     display: none;
   }
@@ -128,6 +132,8 @@ body {
     list-style-type: none;
 }
 
+
+
 .footerNav ul li a{
     margin: 20px;
     text-decoration: none;
@@ -138,7 +144,7 @@ body {
 }
 
 .footerNav ul li a:hover{
-    opacity: 1;
+    color: #b537ff;
 }
 
 .footerCopyright{
