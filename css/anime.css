@@ -149,6 +149,7 @@ body {
 
 .nav-links:hover {
   color: #b537ff;
+  transition: 1s;
 }
 
 .divlogo {
@@ -162,6 +163,11 @@ body {
   text-decoration: none; 
   color: #9e02f9;
   margin: 10px;
+}
+
+.logo:hover {
+  color: #b537ff;
+  transition: 1s;
 }
 
 .main-nav li {
@@ -233,6 +239,7 @@ footer {
 
 .footerNav ul li a:hover{
   color: #b537ff;
+  transition: 1s;
 }
 
 .footerCopyright{
@@ -304,4 +311,9 @@ footer {
   .navbar-toggle i {
     margin-right: 10px;
   }
+}
+
+.navbar-toggle i:hover {
+  color: #b537ff;
+    transition: 1s;
 }

@@ -70,6 +70,7 @@ body {
 
 .nav-links:hover {
   color: #b537ff;
+  transition: 1s;
 }
 
 .divlogo {
@@ -164,6 +165,11 @@ body {
   padding-left: 10px;
 }
 
+.logo:hover {
+  color: #b537ff;
+  transition: 1s;
+}
+
 .navbar-toggle {
 display: block;
 position: absolute;
@@ -179,6 +185,10 @@ font-size: 30px;
 }
 }
 
+.navbar-toggle i:hover {
+  color: #b537ff;
+    transition: 1s;
+}
 
 
 
@@ -242,6 +252,7 @@ footer {
 
 .footerNav ul li a:hover{
   color: #b537ff;
+  transition: 1s;
 }
 
 .footerCopyright{
