@@ -16,7 +16,7 @@
 body {
     background-color: #030637;    
 }
- */
+
 /* h2 {
   color:white;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
@@ -120,7 +120,7 @@ body {
 .sub-menu {
   display: none;
   position: absolute;
-  top: 80px;
+  top: 90px;
   right: 0;
   background: #030637;
   width: 100%;
@@ -157,7 +157,7 @@ body {
 
 .logo {
   margin: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .navbar-toggle {

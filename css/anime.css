@@ -266,7 +266,7 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 0;
     background: #030637;
     width: 100%;
@@ -284,7 +284,7 @@ footer {
 
   .logo {
     margin: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .navbar-toggle {
