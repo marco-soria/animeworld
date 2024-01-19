@@ -102,7 +102,7 @@ body {
 }
 
 .nav-links:hover {
-  color: #b537ff;
+  color: #C21292;
   transition: 1s;
 }
 
@@ -117,6 +117,11 @@ body {
   text-decoration: none; 
   color: #9e02f9;
   margin: 10px;
+}
+
+.logo:hover {
+  color: #C21292;
+  transition: 1s;
 }
 
 .main-nav li {
@@ -199,7 +204,7 @@ body {
 }
 
 .logo:hover {
-  color: #b537ff;
+  color: #C21292;
   transition: 1s;
 }
 
@@ -284,7 +289,7 @@ footer {
 }
 
 .footerNav ul li a:hover{
-  color: #b537ff;
+  color: #C21292;
   transition: 1s;
 }
 

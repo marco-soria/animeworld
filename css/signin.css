@@ -76,7 +76,7 @@ body {
   }
 
   .nav-links:hover {
-    color: #b537ff;
+    color: #C21292;
     transition: 1s;
   }
 
@@ -94,7 +94,7 @@ body {
 }
 
   .logo:hover {
-    color: #b537ff;
+    color: #C21292;
     transition: 1s;
   }
   
@@ -166,7 +166,7 @@ footer {
 }
 
 .footerNav ul li a:hover{
-  color: #b537ff;
+  color: #C21292;
   transition: 1s;
 }
 
