@@ -21,7 +21,7 @@ const setSearchResults = (results) => {
             <div class="col-md-3 mt-3 g-2">
             <div class="card formbg">
                   <img class="card border-0"
-                      style="max-height: 40vh; object-fit: cover"
+                      style="height: 40vh; object-fit: cover"
                       src="${result.images.jpg.large_image_url}"
                       alt="${result.title}">
                   <div class="card-body text-center">
