@@ -167,16 +167,18 @@ function renderProducts(products) {
       const productCard = document.createElement('div');
       productCard.className = 'col-md-3 col-6 mb-4';
       productCard.innerHTML = `
-            <div class="card h-100">
-            <img src="${product.image}" class="d-block w-100" alt="${product.name}" style="height: 40vh; object-fit: cover;">
+            <div class="card formbg">
+            <img src="${product.image}" class="card border-0" alt="${product.name}" style="height: 40vh; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text">$${product.price.toFixed(2)}</p>
-                        <i class="heart-icon fa ${product.favorite ? 'fa-solid' : 'fa-regular'} fa-heart" style="cursor: pointer; color: #ff0000;"></i>
+                    <h5 class="card-title" style="color: #9500ff;">${product.name}</h5>
+                    
+                        <p class="card-text fs-5">$${product.price.toFixed(2)}</p>
+                        
+                    <div class="d-flex justify-content-between align-items-center">
+                      <button class="btn btn-primary signupbutton mt-2">Add to Cart</button>
+                      <i class="heart-icon fa ${product.favorite ? 'fa-solid' : 'fa-regular'} fa-heart fa-2xl" style="cursor: pointer; color: #ff0088;"></i>
                     </div>
-                    <button class="btn btn-primary btn-block mt-2 w-100">Add to Cart</button>
-                </div>
+                  </div>
             </div>
         `;
 
