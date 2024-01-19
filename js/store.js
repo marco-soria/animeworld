@@ -64,9 +64,9 @@ const productsData = [
   { product27: { id: 27, name: 'Sailor Moon SuperS', description: '', image: 'img/store/product27.jpg', category: 'Blu-ray', price: 44.99, favorite: false } },
   { product28: { id: 28, name: 'Naruto Shippuden - Set 2', description: '', image: 'img/store/product28.jpg', category: 'Blu-ray', price: 24.99, favorite: false } },
   { product29: { id: 29, name: 'Mazinger Z - TV Series Collection 2', description: '', image: 'img/store/product29.jpg', category: 'Blu-ray', price: 59.96, favorite: false } },
-  { product30: { id: 30, name: 'Lupin the 3rd - 7D Rhapsody', description: '', image: 'img/store/product30.jpg', category: 'Blu-ray', price: 18.71, favorite: false } },
+  { product30: { id: 30, name: 'Lupin the 3rd - 7D Rhapsody', description: '', image: 'img/store/product30.jpg', category: 'Blu-ray', price: 18.71, favorite: false } },*/
   { product31: { id: 31, name: 'B Gata H Kei', description: '', image: 'img/store/product31.jpg', category: 'Blu-ray', price: 37.49, favorite: false } },
-  { product32: { id: 32, name: 'Fairy Tail Collection 9', description: '', image: 'img/store/product32.jpg', category: 'Blu-ray', price: 41.24, favorite: false } }, */
+  { product32: { id: 32, name: 'Fairy Tail Collection 9', description: '', image: 'img/store/product32.jpg', category: 'Blu-ray', price: 41.24, favorite: false } }, 
   { product33: { id: 33, name: 'Junji Ito - Yon & Mu Holiday Sweater', description: '', image: 'img/store/product33.jpg', category: 'Clothing', price: 38.47, favorite: false } },
   { product34: { id: 34, name: 'One Piece - Gum Gum Sweater', description: '', image: 'img/store/product34.jpg', category: 'Clothing', price: 46.71, favorite: false } },
   { product35: { id: 35, name: "JoJo's Bizarre Adventure - Mista", description: '', image: 'img/store/product35.jpg', category: 'Clothing', price: 24.99, favorite: false } },
