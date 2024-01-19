@@ -170,7 +170,7 @@ function renderProducts(products) {
             <div class="card formbg">
             <img src="${product.image}" class="card border-0" alt="${product.name}" style="height: 40vh; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: #9500ff;">${product.name}</h5>
+                    <h5 class="card-title" style="color: #9500ff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${product.name}</h5>
                     
                         <p class="card-text fs-5">$${product.price.toFixed(2)}</p>
                         
@@ -216,3 +216,25 @@ function searchProducts() {
 
 // Llamada a la función loadCategoriesAndProducts() al cargar la página
 window.addEventListener('load', loadCategoriesAndProducts);
+
+/*gift card*/
+
+
+function updatePrice() {
+  
+  var dropdown = document.getElementById("giftCardDropdown");
+  var priceSpan = document.getElementById("giftCardPrice");
+  var addToCartButton = document.getElementById("addToCartButton");
+
+  if (dropdown.value === "0") {
+      addToCartButton.disabled = true;
+  } else {
+      addToCartButton.disabled = false;
+      priceSpan.textContent = dropdown.value;
+  }
+}
+
+/* function addToCart() {
+  // Implement your logic to add to cart here
+  alert("Item added to cart!");
+} */

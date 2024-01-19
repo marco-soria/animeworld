@@ -356,3 +356,47 @@ footer {
     }
 }
 
+
+/*cardstars*/
+.card-stars:hover {
+  color: #fd0050 !important;
+  transition: 1s;
+}
+
+/*slider*/
+
+.content-slider{
+ /*  position: relative;
+  top: 38.7rem; */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.card-slider{
+  overflow: hidden;
+  padding: 1rem 0;
+  background: none;
+}
+
+.slide{
+  
+  white-space: nowrap;
+  animation: 23s slide infinite linear;
+}
+
+.slide img{
+  height: 100px;
+  margin: 0 40px;
+  object-fit: cover;
+}
+
+
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}

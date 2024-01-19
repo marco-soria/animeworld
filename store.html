@@ -73,7 +73,7 @@
 <div class="container-fluid mb-3" style="margin-top: 80px;">
     <div class="row">
         <div class="col">
-            <img src="img/anime/jujutsukaisen.jpg" class="card d-block w-100" style="max-height: 40vh; object-fit: cover; border: solid 1px #9500ff" alt="">
+            <img src="img/store/banner5.png" class="card d-block w-100" style="max-height: 40vh; object-fit: cover; border: solid 1px #9500ff" alt="">
         </div>
     </div>
 </div>
@@ -85,8 +85,8 @@
             <div class="col-md-12">
                 <!-- <h2>Search</h2> -->
                 <div class="input-group mb-1">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Product">
-                    <button class="btn btn-success signupbutton" type="button" id="searchButton">Product</button>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search Your Product">
+                    <button class="btn btn-success signupbutton" type="button" id="searchButton"> Search Product</button>
                 </div>
             </div>
         </div>
@@ -118,8 +118,84 @@
                 <div id="products-container" class="row"></div>
             </div>
         </div>
+
+        <hr style="border: solid 3px">
     </div>
 
+    <div class="container-fluid mt-3 mb-2">
+        <div class="row">
+            <p class="fs-2 text-center">THE FAVORITE GIFT CARD <i class="fa fa-solid fa-heart "  style="color: #ff0088;"></i></p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 p-0" style="height: 600px; width: 600px;">
+                <div class="card border-0" id="signupCard" style="height: 100%; width: 100%;">
+                    <img src="./img/store/giftcard.png" class="img-fluid" alt="Signup Image" style="height: 100%; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+    
+            <div class="col-md-6 p-0" style="height: 600px; width: 600px;">
+                <div class="card border-0 p-5 d-flex justify-content-center" id="signupCard" style="background-color: #E9F6FF; height: 100%; width: 100%; object-fit: cover;">
+                    <div class="d-flex justify-content-between align-items-center mb-2" >
+                        <h3 class="text-center mb-4"><strong>AnimeWorld Digital Card</strong> </h3>
+                        <div class="mb-4">
+                            <i class="fa-sharp fa-solid fa-star fa-lg card-stars" style="color: #9e02f9;;"></i>
+                            <i class="fa-sharp fa-solid fa-star fa-lg card-stars" style="color: #9e02f9;;"></i>
+                            <i class="fa-sharp fa-solid fa-star fa-lg card-stars" style="color: #9e02f9;;"></i>
+                            <i class="fa-sharp fa-solid fa-star fa-lg card-stars" style="color: #9e02f9;;"></i>
+                            <i class="fa-sharp fa-solid fa-star fa-lg card-stars" style="color: #9e02f9;"></i>
+                        </div>
+                    </div>
+                    <p class="text-start mb-2"><strong>$<span id="giftCardPrice">200</span></strong></p>
+                    <div class="mb-3">
+                        <select class="form-select" id="giftCardDropdown" onchange="updatePrice()">
+                            <option value="0">-- Select Gift Card --</option>
+                            <option value="25">$25</option>
+                            <option value="50">$50</option>
+                            <option value="100">$100</option>
+                            <option value="200">$200</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-secondary signupbutton" id="addToCartButton" onclick="addToCart()" disabled="true">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid content-slider mt-5">
+       
+        <div class="row card-slider">
+            <div class="col slide">
+                <img src="./img/store/slider1bleach.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider2fairytail.png" alt="">
+                <img src="./img/store/slider3fma.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider4jojo.png" alt="" />
+                <img src="./img/store/slider5hxh.png" alt="" />
+                <img src="./img/store/slider6op.png" alt="">
+                <img src="./img/store/slider1bleach.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider2fairytail.png" alt="">
+                <img src="./img/store/slider3fma.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider4jojo.png" alt="" />
+                <img src="./img/store/slider5hxh.png" alt="" />
+                <img src="./img/store/slider6op.png" alt="">
+                <img src="./img/store/slider1bleach.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider2fairytail.png" alt="">
+                <img src="./img/store/slider3fma.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider4jojo.png" alt="" />
+                <img src="./img/store/slider5hxh.png" alt="" />
+                <img src="./img/store/slider6op.png" alt="">
+                <img src="./img/store/slider1bleach.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider2fairytail.png" alt="">
+                <img src="./img/store/slider3fma.png" style="height: 150px;" alt="" />
+                <img src="./img/store/slider4jojo.png" alt="" />
+                <img src="./img/store/slider5hxh.png" alt="" />
+                <img src="./img/store/slider6op.png" alt="">
+                
+                
+
+            </div>
+        </div>
+    </div>
 
 
     <footer>
