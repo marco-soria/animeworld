@@ -221,6 +221,7 @@ window.addEventListener('load', loadCategoriesAndProducts);
 
 
 function updatePrice() {
+  
   var dropdown = document.getElementById("giftCardDropdown");
   var priceSpan = document.getElementById("giftCardPrice");
   var addToCartButton = document.getElementById("addToCartButton");
@@ -233,7 +234,7 @@ function updatePrice() {
   }
 }
 
-function addToCart() {
+/* function addToCart() {
   // Implement your logic to add to cart here
   alert("Item added to cart!");
-}
+} */
