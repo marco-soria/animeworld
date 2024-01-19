@@ -223,7 +223,7 @@ footer {
 
 .footerContainer {
   width: 100%;
-  padding: 50px 30px 20px 50px;
+  padding: 50px 20px;
 }
 
 .mediaIcons {
@@ -353,4 +353,15 @@ footer {
 .navbar-toggle i:hover {
   color: #b537ff;
     transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .logo{
+    font-size: 30px;
+  }
+  .divlogo img {
+    height: 50px;
+    width: 50px
+  }
+
 }
