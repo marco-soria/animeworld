@@ -13,7 +13,7 @@ body {
 /*backgroundcard*/
 .formbg {
   background-color: #3C0753;
-  border: solid 4px #1a0027;
+  /* border: solid 0.5px #C21292; */
 }
 
 /*card buttons*/
@@ -257,4 +257,14 @@ footer {
     width: 50px
   }
 
+}
+
+.lasthover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.lasthover:hover{
+  color: blue important!;
+  transition: 1s;
 }

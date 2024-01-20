@@ -305,3 +305,40 @@ footer {
     color: #C21292;
     transition: 0.5s;
   }
+
+/*secondary links*/
+.firstsecondarylink {
+    color: white;
+    text-decoration: none;
+}  
+
+.firstsecondarylink h4 {
+    text-align: justify;
+}
+
+.firstsecondarylink:hover {
+    color: #C21292;
+    transition: 0.5s;
+}
+
+h6 {
+    color: white;
+    text-align: justify;
+}
+
+.secondsecondarylink {
+    color: #9e02f9;
+    text-decoration: none;
+}
+
+.secondsecondarylink:hover {
+    color: #C21292;
+    transition: 0.5s;
+}
+
+/*cardstars*/
+
+/* .card-stars:hover {
+    color: #fd0050 !important;
+    transition: 1s;
+  } */

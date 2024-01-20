@@ -6,7 +6,25 @@ navBarToggle.addEventListener("click", function() {
   mainNav.classList.toggle("active");
 });
 
+
 function toggleView(view) {
+    let signupCard = document.getElementById("signupCard");
+    let forgotPasswordContainer = document.getElementById("forgotPasswordContainer");
+    let subscribeContainer = document.getElementById("subscribeContainer");
+  
+    if (view === 'signin') {
+      signupCard.querySelector('img').src = "./img/signin/momosignin.jpg";
+      forgotPasswordContainer.classList.remove('d-none');
+      subscribeContainer.classList.add('d-none');
+    } else if (view === 'signup') {
+      signupCard.querySelector('img').src = "./img/signin/momosignup.webp";
+      forgotPasswordContainer.classList.add('d-none');
+      subscribeContainer.classList.remove('d-none');
+    }
+}
+  
+
+/* function toggleView(view) {
   var signupCard = document.getElementById("signupCard");
   var signupForm = document.getElementById("signupForm");
   var forgotPasswordContainer = document.getElementById("forgotPasswordContainer");
@@ -24,7 +42,7 @@ function toggleView(view) {
                   <input type="password" class="form-control" placeholder="Password">
               </div>
               <div class="mb-3" id="forgotPasswordContainer">
-                  <a href="#" id="forgotPasswordLink" style="color:lightblue">Forgot your password?</a>
+                  <a href="#" id="forgotPasswordLink" class="lasthover">Forgot your password?</a>
               </div>
               <div class="mb-3 d-flex justify-content-evenly">
                   <button type="button" class="btn btn-secondary signinbutton" onclick="toggleView('signin')">Sign In</button>
@@ -63,3 +81,4 @@ function toggleView(view) {
       forgotPasswordContainer.style.display = 'none';
   }
 }
+ */
