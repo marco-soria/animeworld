@@ -16,6 +16,18 @@ body {
     /* border: solid 1px #9500ff; */
 }
 
+hr{
+    border: solid 2px;
+    border-color: gray;
+}
+
+.mainhr {
+    border: solid 2px;	
+    border-color: #E26EE5;
+    opacity: 1;
+}
+
+
 /*card buttons*/
 
 .signinbutton {
@@ -281,3 +293,15 @@ footer {
     color: #C21292;
     transition: 1s;
   } 
+
+/*frontlinks*/
+
+.frontlinks {
+    color: white;
+    text-shadow: 0 0 3px #FF0000 0 0 5px #0000FF;
+  }
+
+  .frontlinks:hover {
+    color: #C21292;
+    transition: 0.5s;
+  }
