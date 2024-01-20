@@ -240,14 +240,14 @@ footer {
 
   .navbar-toggle i {
     margin-right: 10px;
-    color: #C21292
+    /* color: #C21292 */
   }
 }
 
-.navbar-toggle i:hover {
+/* .navbar-toggle i:hover {
   color: #C21292;
     transition: 1s;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .logo{
