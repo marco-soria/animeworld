@@ -219,9 +219,9 @@ footer {
     display: flex;
   }
 
-  .nav-links {
+  /* .nav-links {
     margin: 10px 20px;
-  }
+  } */
 
   .logo {
     margin: 10px;
@@ -244,7 +244,7 @@ footer {
 }
 
 .navbar-toggle i:hover {
-  color: #b537ff;
+  color: #C21292;
     transition: 1s;
 }
 
