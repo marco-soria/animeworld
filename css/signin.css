@@ -268,3 +268,7 @@ footer {
   color: blue important!;
   transition: 1s;
 }
+
+.form-check-label{
+  color: skyblue;
+}
