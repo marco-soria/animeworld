@@ -163,7 +163,7 @@ body {
 .sub-menu {
   display: none;
   position: absolute;
-  top: 90px;
+  top: 80px;
   right: 0;
   background: #030637;
   width: 100%;
@@ -180,7 +180,7 @@ body {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 140px;
+  top: 130px;
   right: 0;
   background: #030637;
   width: 100%;
