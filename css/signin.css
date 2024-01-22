@@ -12,8 +12,8 @@ body {
 
 /*backgroundcard*/
 .formbg {
-  background-color: #3C0753;
-  /* border: solid 0.5px #C21292; */
+  background-color: #030637;
+  border: solid 3px #C21292;
 }
 
 /*card buttons*/
@@ -21,7 +21,8 @@ body {
 .signinbutton {
   background-color: #E26EE5;
   color:white;
-  border: #E26EE5 ;
+  border: #E26EE5;
+  width: 49%;
  /*  border-radius: 30%;
   padding: 10px 15px;
   margin-right: 10px; */
@@ -37,6 +38,7 @@ body {
   background-color: #C21292;
   color:white;
   border: #C21292 ;
+  width: 49%;
   /* border-radius: 30%;
   padding: 10px 15px;
   margin-left: 10px; */
